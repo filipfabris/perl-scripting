@@ -96,6 +96,13 @@ sub XSUB;
 sub XSUBANY;
 sub const_sv;
 }
+package B::Debug {
+sub cstring;
+sub main_root;
+sub main_start;
+sub sv_undef;
+sub walkoptree;
+}
 package B::Deparse {
 sub main_cv;
 sub main_root;
@@ -1720,6 +1727,18 @@ package Cwd {
 sub CLONE;
 sub getdcwd(;@) ;
 }
+package DB {
+sub DB_profiler;
+sub _CHECK;
+sub _END;
+sub _INIT;
+sub _finish;
+sub disable_profile;
+sub enable_profile;
+sub finish_profile;
+sub init_profiler;
+sub set_option;
+}
 package DBD::ODBC::db {
 sub DESTROY;
 sub FETCH;
@@ -3142,6 +3161,12 @@ sub _seconds_as_components($$;$$) ;
 sub _time_as_seconds($$$$) ;
 sub _ymd2rd($$$$) ;
 }
+package Devel::Cover {
+sub main_cv;
+sub main_root;
+sub main_start;
+sub ppname;
+}
 package Devel::Declare {
 sub clear_lex_stuff;
 sub get_curstash_name;
@@ -3158,6 +3183,18 @@ sub toke_scan_ident;
 sub toke_scan_str;
 sub toke_scan_word;
 sub toke_skipspace;
+}
+package Devel::NYTProf::Data {
+sub load_profile_data_from_file;
+}
+package Devel::NYTProf::Test {
+sub example_xsub;
+sub example_xsub_eval;
+sub set_errno;
+sub ticks_for_usleep;
+}
+package Devel::NYTProf::Util {
+sub trace_level;
 }
 package Devel::OverloadInfo {
 sub blessed($) ;
@@ -3913,6 +3950,11 @@ sub utf8_mode;
 sub xml_mode;
 sub xml_pic;
 }
+package Hash::StoredIterator {
+sub hash_get_iterator;
+sub hash_init_iterator;
+sub hash_set_iterator;
+}
 package Hash::Util {
 sub _clear_placeholders(\%) ;
 sub all_keys(\%\@\@) ;
@@ -4630,6 +4672,10 @@ sub V;
 sub getcwd() ;
 sub hv_clear_placeholders(\%) ;
 }
+package JSON::MaybeXS {
+sub decode_json($;$$) ;
+sub encode_json($;$) ;
+}
 package JSON::XS {
 sub CLONE;
 sub DESTROY;
@@ -4827,6 +4873,60 @@ package List::MoreUtils::XS_ea {
 sub DESTROY;
 }
 package List::MoreUtils::XS_sa {
+sub DESTROY;
+}
+package List::SomeUtils::PP {
+sub max(@) ;
+}
+package List::SomeUtils::XS {
+sub _array_iterator(;$) ;
+sub _natatime_iterator() ;
+sub after(&@) ;
+sub after_incl(&@) ;
+sub all(&@) ;
+sub all_u(&@) ;
+sub any(&@) ;
+sub any_u(&@) ;
+sub apply(&@) ;
+sub before(&@) ;
+sub before_incl(&@) ;
+sub bsearch(&@) ;
+sub bsearchidx(&@) ;
+sub each_array(\@;\@\@\@\@\@\@\@\@\@\@\@\@\@\@\@\@\@\@\@\@\@\@\@\@\@\@\@\@\@\@) ;
+sub each_arrayref;
+sub false(&@) ;
+sub firstidx(&@) ;
+sub firstres(&@) ;
+sub firstval(&@) ;
+sub indexes(&@) ;
+sub insert_after(&$\@) ;
+sub insert_after_string($$\@) ;
+sub lastidx(&@) ;
+sub lastres(&@) ;
+sub lastval(&@) ;
+sub mesh(\@\@;\@\@\@\@\@\@\@\@\@\@\@\@\@\@\@\@\@\@\@\@\@\@\@\@\@\@\@\@\@\@) ;
+sub minmax(@) ;
+sub mode(@) ;
+sub natatime($@) ;
+sub none(&@) ;
+sub none_u(&@) ;
+sub notall(&@) ;
+sub notall_u(&@) ;
+sub one(&@) ;
+sub one_u(&@) ;
+sub onlyidx(&@) ;
+sub onlyres(&@) ;
+sub onlyval(&@) ;
+sub pairwise(&\@\@) ;
+sub part(&@) ;
+sub singleton(@) ;
+sub true(&@) ;
+sub uniq(@) ;
+}
+package List::SomeUtils_ea {
+sub DESTROY;
+}
+package List::SomeUtils_na {
 sub DESTROY;
 }
 package List::Util {
@@ -9867,6 +9967,7 @@ sub termsizeoptions;
 }
 package Test2::API {
 sub blessed($) ;
+sub time() ;
 sub weaken($) ;
 }
 package Test2::API::Context {

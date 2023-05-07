@@ -4,7 +4,6 @@
     <option name="perlInterpreter" value="Local, System: Perl 5.32.1" />
   </component>
   <component name="Perl5XSubsState">
-    <option name="isActual" value="false" />
     <option name="myFilesMap">
       <map>
         <entry key="$PROJECT_DIR$/../../../../../../../../Strawberry/perl/lib/auto/B/B.xs.dll" value="1611493318000" />
@@ -67,6 +66,11 @@
         <entry key="$PROJECT_DIR$/../../../../../../../../Strawberry/perl/lib/auto/threads/shared/shared.xs.dll" value="1611493506000" />
         <entry key="$PROJECT_DIR$/../../../../../../../../Strawberry/perl/lib/auto/threads/threads.xs.dll" value="1611493504000" />
         <entry key="$PROJECT_DIR$/../../../../../../../../Strawberry/perl/lib/auto/version/vxs/vxs.xs.dll" value="1611495026000" />
+        <entry key="$PROJECT_DIR$/../../../../../../../../Strawberry/perl/site/lib/Devel/auto/Devel/NYTProf/NYTProf.xs.dll" value="1681671209000" />
+        <entry key="$PROJECT_DIR$/../../../../../../../../Strawberry/perl/site/lib/auto/Devel/Cover/Cover.xs.dll" value="1681671221000" />
+        <entry key="$PROJECT_DIR$/../../../../../../../../Strawberry/perl/site/lib/auto/Devel/NYTProf/NYTProf.xs.dll" value="1681671001000" />
+        <entry key="$PROJECT_DIR$/../../../../../../../../Strawberry/perl/site/lib/auto/Hash/StoredIterator/StoredIterator.xs.dll" value="1681670579000" />
+        <entry key="$PROJECT_DIR$/../../../../../../../../Strawberry/perl/site/lib/auto/List/SomeUtils/XS/XS.xs.dll" value="1681670688000" />
         <entry key="$PROJECT_DIR$/../../../../../../../../Strawberry/perl/vendor/lib/auto/B/COW/COW.xs.dll" value="1611497922000" />
         <entry key="$PROJECT_DIR$/../../../../../../../../Strawberry/perl/vendor/lib/auto/B/Hooks/OP/Check/Check.xs.dll" value="1611500010000" />
         <entry key="$PROJECT_DIR$/../../../../../../../../Strawberry/perl/vendor/lib/auto/B/Utils/Utils.xs.dll" value="1611500228000" />

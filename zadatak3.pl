@@ -1,9 +1,10 @@
 #!/usr/bin/perl
 
-$path_to_file = "";
-@lines = ();
+my $path_to_file = "";
+my @lines = ();
+
 # Read files from input and store them in an array
-for($i = 0; $i < @ARGV; $i++) {
+for(my $i = 0; $i < @ARGV; $i++) {
     $path_to_file = $ARGV[$i];
     open $handle, '<', $path_to_file;
     chomp(@tmp = <$handle>);
@@ -15,7 +16,7 @@ for($i = 0; $i < @ARGV; $i++) {
 my %dictionary;
 
 # Parse log files
-foreach $line (@lines) {
+foreach my $line (@lines) {
     # print("$line\n");
     my ($date, $hour) = ($line =~ /^\S+ - - \[(\d+\/\w+\/\d+):(\d+).+/);
     $date = convert_date($date);
