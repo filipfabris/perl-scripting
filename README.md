@@ -2,11 +2,36 @@
 
 ## Task 3.
 * for each hour of the day, print the server request access number:
-``` bash perl zadatak3.pl logs.txt```
+``` bash perl zadatak3.pl logs.txt logs.txt```
 * Output:
 ```
-
-
+Datum: 2008-02-24
+Sat : broj pristupa
+-----:---------
+00 : 198
+01 : 124
+02 : 30
+03 : 100
+04 : 30
+05 : 54
+06 : 66
+07 : 22
+08 : 78
+09 : 166
+10 : 548
+11 : 522
+12 : 440
+13 : 766
+14 : 650
+15 : 420
+16 : 656
+17 : 692
+18 : 472
+19 : 840
+20 : 972
+21 : 1198
+22 : 1230
+23 : 1186
 ```
 
 ## Task 4.
